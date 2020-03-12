@@ -56,6 +56,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
 header h1 {
@@ -149,7 +150,6 @@ header nav ul li a{
 	padding: 0;
 }
 
-/*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
 	text-align: center;
@@ -163,4 +163,32 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media all and (min-width:768px) {
+	.bottom-section {
+
+	}
+
+	.section-one {
+		width: 33.33%;
+	}
+
+	.section-two {
+		width: 33.33%;
+	}
+
+	.section-three {
+		width: 33.33%;
+	}
+}
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media all and (min-width:1200px) {
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
