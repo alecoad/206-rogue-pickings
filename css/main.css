@@ -76,14 +76,14 @@ header nav {
 header nav ul {
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	list-style-type: none;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
 	padding-bottom: 1.5em;
-	display: flex;
-	justify-content: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -120,6 +120,7 @@ header nav ul li a{
 .section-three {
 	border-top: 1px solid #eee;
 	width: 100%;
+	flex-grow: 1;
 }
 
 .section-one h4,
@@ -168,19 +169,26 @@ footer span {
 /* ----------- Tablets larger than 768px wide ----------- */
 @media all and (min-width:768px) {
 	.bottom-section {
-
+		width: 100%;
+		align-items: flex-start;
+		justify-content: space-between;
 	}
 
 	.section-one {
-		width: 33.33%;
+		width: 25%;
+		padding-right: 4%;
 	}
 
 	.section-two {
-		width: 33.33%;
+		width: 25%;
+		padding: 0 4%;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
 	}
 
 	.section-three {
-		width: 33.33%;
+		padding-left: 4%;
+		width: 25%;
 	}
 }
 
