@@ -199,4 +199,17 @@ footer span {
 		justify-content: space-between;
 	}
 
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+	header h1 {
+		width: 40%;
+		text-align: left;
+		border-bottom: none;
+	}
+	header nav {
+		width: 40%;
+		padding-top: 2.5em;
+	}
 }
